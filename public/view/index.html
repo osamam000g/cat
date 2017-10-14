@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Catalog Eg</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    
+    <link href="/css/settings.css" rel="stylesheet" type="text/css">
+    <link href="/css/layers.css" rel="stylesheet" type="text/css">
+    <link href="/css/owl.css" rel="stylesheet" type="text/css">
+    <link href="/css/navigation.css" rel="stylesheet" type="text/css">
+    
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
+    
+    <link rel="icon" href="/image/favicon.png" type="image/x-icon">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="/js/respond.js"></script><![endif]-->
+</head>
+
+<!--ng-controller="indexCTRL"-->
+<body ng-app="catalog" ng-controller="homeCTRL">
+
+<div  class="ng-cloak">
+    
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-style-three">
+    	
+        <!-- Header Top -->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    
+                    <!--Top Left-->
+                    <div class="top-left">
+                    	<ul class="link-nav clearfix">
+                        	<li><a><span class="icon fa fa-phone"></span>+201100111504</a></li>
+                            <li><a><span class="icon fa fa-envelope"></span>catalog.eg@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--Top Right-->
+                    <div class="top-right">
+                    	<ul class="social-icon-one">
+                        	<li class="color-yellow">Stay Connected</li>
+                            <li><a href="https://www.facebook.com/catalogeg/"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCpULAmy7h6py14UUQX5Xsag?view_as=subscriber"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/catalogeg/"><i class="fa fa-linkedin-square"></i></a></li>
+                            
+                            <li><a href="https://www.instagram.com/catalog.eg/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- Header Top End -->
+        
+        <!-- Main Box -->
+    	<div class="main-box">
+        	<div class="auto-container">
+            	<div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="/"><img src="/images/Final-Logo1.png" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a>Digital Marketing</a>
+                                    	<ul>
+                                            <li><a href="/seo">Search Engine Optimization</a></li>
+                                            <li><a href="/emailMarketing">Email Marketing</a></li>
+                                            <li><a href="/socialMedia">Social Media Marketing</a></li>
+                                            <li><a href="/payPerClick">Pay Per Click Management</a></li>
+
+                                        </ul>
+                                      
+                                    </li>
+                                    <li class="dropdown"><a>Software</a>
+                                    	<ul>
+                                            <li><a href="/webDesign">Web Design</a></li>
+                                            <li><a href="/mobileApp">Mobile Applications
+
+                                            <li><a href="/webDevelop">Web Development</a></li></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a>Branding</a>
+                                    	<ul>
+                                            <li><a href="/graphic">Graphic Design &amp; Brand</a></li>
+                                            <li><a href="/photography">photography</a></li>
+                                            <li><a href="/motion">Motion Graphic</a></li>
+                                            <li><a href="/art">ART &amp; Character design</a></li>
+                                        </ul>
+                                    </li>
+<!--
+                                    <li class=""><a href="/print">Printing</a>
+                                    
+                                    </li>
+-->
+<!--
+                                    <li class=""><a href="/blogs/:">Blog</a>
+
+                                    </li>
+-->
+
+                                    <li><a ng-click="redirectReloadContact()">Contact Us</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!--Right Info-->
+<!--
+                        <div class="info-options">
+                            <div class="info-block clearfix">
+                                <div class="search-box-outer">
+                                    <div class="dropdown">
+                                        <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                        <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                            <li class="panel-outer">
+                                                <div class="form-container">
+                                                    <form method="post" action="http://t.commonsupport.com/seoboost/blog.html">
+                                                        <div class="form-group">
+                                                            <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                            <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="shop-single.html" class="cart-btn flaticon-shopping-bag-2"><span class="item-count">0</span></a>
+                            </div>
+                        </div>
+                        
+-->
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+            	</div>    
+            </div>
+        </div>
+    
+    </header>
+    <!--End Main Header -->
+       <!--Main Slider-->
+    <section class="main-slider main-slider-one" ng-show="showSlider">
+    	
+        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_486_1_wrapper" data-source="gallery">
+            <div class="rev_slider fullwidthabanner" id="rev_slider_486_1" data-version="5.4.1">
+                <ul>
+                	
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/image-3.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/image-3.jpg">
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-fontsize="['64','48','36','24']"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['210','200','150','90']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<h2> Web <br>Development </h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['670','670','600','420']"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['390','370','300','200']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<div class="text">Our expert team of Website Developers &amp; Digital Strategists use cutting edge technology &amp; best practices to create custom sites that increase user engagement.</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['470','460','390','350']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<a href="/webDevelop" class="theme-btn btn-style-three">Learn More <span class="icon fa fa-long-arrow-right"></span></a>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','0','0','0']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['right','right','right','right']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-image-4.png" alt=""></figure>
+                    </div>
+                    
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['-200','-200','-200','-200']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-2.png" alt=""></figure>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['400','370','300','200']"
+                    data-voffset="['-190','-190','-150','-150']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":3000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":0,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-1.png" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/image-1.jpg"> 
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-fontsize="['64','48','36','24']"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['210','200','150','90']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<h2>Your <span class="theme_color">Digital</span> <br> Marketing Solution</h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['670','670','600','420']"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['380','370','300','200']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<div class="text">Our digital marketing strategy is built on the foundation of driving measurable results. We take an omni-channel approach to online marketing with a focus on increasing conversions</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['470','460','390','350']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<a href="/socialMedia" class="theme-btn btn-style-one">Learn More <span class="icon fa fa-long-arrow-right"></span></a>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['90','0','0','0']"
+                    data-x="['right','right','right','right']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-image-1.png" alt=""></figure>
+                    </div>
+                    
+                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden" 
+                    data-basealign="slide"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="auto"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','0','0','0']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['right','right','right','right']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-image-2.png" alt=""></figure>
+                    </div>
+                    
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['-200','-200','-200','-200']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-2.png" alt=""></figure>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['500','500','400','250']"
+                    data-voffset="['-190','-190','-150','-150']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":3000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":0,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-1.png" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/images/main-slider/image-2.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="/images/main-slider/image-2.jpg">
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-fontsize="['64','48','36','24']"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['210','200','150','90']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<h2>Make <br> Your Brand</h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['670','670','600','420']"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['390','370','300','200']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<div class="text">As a top branding agency, our experts bring your vision to life with creative designs tailored to your unique brand strategy.</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','15','15','15']"
+                    data-voffset="['470','460','390','350']"
+                    data-x="['left','left','left','left']"
+                    data-y="['top','top','top','top']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<a href="/graphic" class="theme-btn btn-style-two">Learn More <span class="icon fa fa-long-arrow-right"></span></a>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['0','0','0','0']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['right','right','right','right']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-image-3.png" alt=""></figure>
+                    </div>
+                    
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['-200','-200','-200','-200']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-2.png" alt=""></figure>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme big-ipad-hidden" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="none"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['380','350','280','180']"
+                    data-voffset="['-190','-190','-150','-150']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[0%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":0,"to":"o:1;","delay":3000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":0,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                    	<figure class="content-image"><img src="/images/main-slider/content-arrow-1.png" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Main Slider-->
+   
+    
+<div ng-view></div>
+
+    <!--Subscribe Style One-->
+    <section class="subscribe-style-one">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2>Sign up for our newsletter to get update</h2>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <form >
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter Your Email Here..." required>
+                            <button type="submit" class="theme-btn"><span class="icon flaticon-send-message-button"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--End Subscribe Style One-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	<!--footer upper-->
+    	<div class="footer-upper">
+        	<div class="auto-container">
+                <div class="row clearfix">
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                                <div class="footer-widget about-widget">
+                                    <h3><span class="theme_color">2000 + </span> Client 
+<!--                                    <br> Already Connected-->
+                                    </h3>
+                                    <div class="text">
+                                    We 're Catalog
+                                     <br>
+                                      A talented in-house teams of experts 
+                                    <br>     From C -> G you will find Bussiness success</div>
+                                    
+                           
+                                   
+                                    <ul class="social-icon-one">
+                                        <li><a href="https://www.facebook.com/catalogeg/"><span class="fa fa-facebook"></span></a></li>
+                                         <li><a href="https://www.youtube.com/channel/UCpULAmy7h6py14UUQX5Xsag?view_as=subscriber"><i class="fa fa-youtube-play"></i></a></li>
+                            
+                            <li><a href="https://www.linkedin.com/in/catalogeg/"><i class="fa fa-linkedin-square"></i></a></li>
+                            
+                            <li><a href="https://www.instagram.com/catalog.eg/"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Quick Links</h2>
+                                    <div class="widget-content">
+                                        <ul class="list">
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="/blogs/:">Blog</a></li>
+                                            <li><a ng-click="redirectReloadContact()">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Our Services</h2>
+                                    
+                            
+                                    
+                                    <div class="widget-content">
+                                        <ul class="list">
+                                            <li><a href="/seo">SEO</a></li>
+                                            <li><a href="/webDevelop">Website Development</a></li>
+                                            <li><a href="/webDesign">Web Design</a></li>
+                                            <li><a href="/graphic">Branding</a></li>
+                                            <li><a href="/photography">photography</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget address-widget">
+                                    <h2>Our Address</h2>
+                                    <div class="widget-content">
+                                        <ul class="list-style-two">
+                                            <li><span class="icon fa fa-map-marker"></span>28 El Mohandes Mohamed Zahran Street, Sidi Gaber, Alexandria, Egypt</li>
+                                            <li><span class="icon fa fa-phone"></span>+201100111504 </li>
+                                            <li><span class="icon">@</span>catalog.eg@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Footer Upper-->
+        
+        <!--footer bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container">
+            	<div class="copyright">&copy; 2017 <a href="http://catalogeg.com/">Catalog-eg.</a> All Rights Reserved. </div>
+            </div>
+        </div>
+        <!--End Footer Bottom-->
+        
+    </footer>
+    <!--End Main Footer-->
+    
+</div>
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
+</div>
+
+  <script src="/js/jquery.js"></script> 
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/angular-route.min.js"></script>
+<script src="/js/ng/app.js"></script>
+
+<!--Revolution Slider-->
+<script src="/js/jquery.themepunch.revolution.min.js"></script>
+
+<script src="/js/jquery.themepunch.tools.min.js"></script>
+
+<script src="/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/js/extensions/revolution.extension.video.min.js"></script>
+
+<!--End Revolution Slider-->
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fancybox-media.js"></script>
+
+<script src="/js/owl.js"></script>
+<script src="/js/appear.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
+<script src="/js/map-script.js"></script>
+    <script src="/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+
+</body>
+</html>

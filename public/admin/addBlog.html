@@ -1,0 +1,286 @@
+   <style>
+footer.main-footer {
+    display: none;
+}
+       section.subscribe-style-one {
+    display: none;
+}
+ .form-control {
+    height: auto;
+    margin-bottom: 10px;
+       }.btn.btn-success.pull-right{
+           margin-right: 20px
+       }
+       .navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+</style>
+      
+      
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+   
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/addBlog">Add Blog</a></li>
+        <li><a href="/inboxs">InBox</a></li>
+     
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+          <li><a ng-click='logoutAdmin()' >logout</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+       
+        <div ng-controller="addBlogCTRL">
+        
+                     
+                         
+     <div class="col-md-12" >
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="panel-title">
+                            Add  Blog
+                          </h4>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                       <div class="row">
+                          <div class="col-md-10 col-md-offset-1">
+                      <div class="alert alert-danger" ng-show="show.errMessageShow">{{errMessage}}</div>
+              <div class="alert alert-success" ng-show="show.successMessageShow">{{successMessage}}</div>
+                         
+                          <form ng-submit="addMobile(data)">
+                              <div class="alert alert-danger" ng-show="show.errMessageShow">
+                              {{errMessage}}
+                              </div>
+                              <div class="alert alert-success" ng-show="show.successMessageShow">
+                              
+                                          {{successMessage}}
+                              
+                              </div>
+                              <div class="jumbotron text-center" ng-show="show.loading">
+                               <h2>
+                                   
+                                 <i class="fa fa-spinner fa-spin 2x"></i>
+                               </h2> 
+                              </div>
+                           <br><br>
+                            <div >
+                              
+                              <input type="text" class="form-control" placeholder="add blog title" aria-label="..." ng-model="data.title" required>
+                            </div>
+                              
+                              
+                             
+                              <div >
+                             
+                              
+                              <textarea  class="form-control" placeholder="add blog content" ng-model="data.content" required></textarea>
+                            </div>
+                              
+                              
+                            <div >
+                              
+
+                           <select name="" id="" class="form-control" ng-model="data.category">
+                               <option value="seo">seo</option>
+                               <option value="emailMarketing">email marketing</option>
+                               <option value="socialMedia">social media</option>
+                               <option value="payPerClick">pay per click</option>
+                               <option value="webDesign">web Design</option>
+                               <option value="mobileApp">mobile app</option>
+                               <option value="brand">Design &amp; Brand</option>
+                               <option value="photography">photography</option>
+                               <option value="motionGraphic">Motion Graphic</option>
+                               <option value="art">Art &amp; Character</option>
+                               <option value="printing">Printing</option>
+                           </select>
+                            </div><!-- /input-group -->
+
+                              <div  ng-show="false">
+                            
+                              <input type="text" class="form-control"  ng-model="data.url">
+                            </div><!-- /input-group -->
+                            
+                            <div class="alert alert-danger" ng-show="show.errMessage">{{show.errText}}</div>
+                          <input type="file" class="form-control" file-model="myFile"/><br>
+                          
+                                 <i class="fa fa-spinner fa-spin fa-2x" ng-show="show.spin" aria-hidden="true"></i>
+                                 <i class="fa fa-check 2x" style="color:green" ng-show="show.check"></i>
+                            <button ng-click="uploadFile()" type="button" class="btn btn-success">
+                                    
+                                     <i class="fa fa-upload "></i>
+                                      Save
+                            </button>  
+                            <br>
+                            
+                            
+                            <button class="btn btn-success pull-right" type="submit">Save</button>
+                            <br>
+                            <br>
+                            <br>
+                            </form>
+   
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  
+                  
+                  
+                   <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingtwo">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                          <h4 class="panel-title">
+                            {{totalItems}} users
+                          </h4>
+                        </a>
+                    </div>
+                    <div id="collapsetwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingtwo">
+                      <div class="panel-body">
+                      <center>
+                          <input type="text" class="form-control" ng-model="serarchText">
+                       <div class="row">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>title</th>
+                                <th>category</th>
+                                <th>url</th>
+                                <th>action</th>
+                               
+                              </tr>
+                            </thead>
+                            <tbody ng-repeat="blog in blogs | blogPagination: (currentPage - 1) * itemsPerPage  | limitTo: itemsPerPage | filter:serarchText ">
+                             
+                            
+                                <td>ID: {{blog._id}}</td>
+                                <td>EMAIL : {{blog.title}}</td>
+                                <td>EMAIL : {{blog.category}}</td>
+                                <td>EMAIL : {{blog.url}}</td>
+                                <td> <a data-toggle="modal" data-target="#myModal" ng-click="getId(blog._id)"><i class="fa fa-trash-o"></i></a> 
+                                
+                                <a data-toggle="modal" data-target="#EditModal"><i class="fa fa-pencil-square-o"></i></a> </td>
+                              
+
+                            </tbody>
+                          </table>
+                         
+                        </div>
+   <ul uib-pagination total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ></ul>
+                     </center>
+
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+           </div>
+  
+<!--  delete modal-->
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Delete Country</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want t delete this country ?</p>
+      </div>
+     
+      <div class="modal-footer">
+        <button class="btn btn-success" ng-click="deletBlog()" data-dismiss="modal">Yes</button>
+      <button class="btn btn-danger" data-dismiss="modal">no</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  
+  <!--  Edit modal-->
+  <div id="EditModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit Country</h4>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+                          <div class="col-md-10 col-md-offset-1">
+                           <br><br>
+                             <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                   User Name
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Enter Your User Name" aria-label="...">
+                            </div><!-- /input-group -->
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                  Password
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Enter Your Password" aria-label="...">
+                            </div><!-- /input-group -->
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                  Repeat Password
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Repeat Password" aria-label="...">
+                            </div><!-- /input-group -->
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                  Email
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="...">
+                            </div><!-- /input-group -->
+                            <br>
+                            
+                            <br>
+
+                            <br>
+                            <br>
+                          </div><!-- /.col-lg-6 -->
+                         
+                        </div><!-- /.row -->
+      </div>
+     
+      <div class="modal-footer">
+      <button class="btn btn-success" >Save</button>
+       <button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+</div>  

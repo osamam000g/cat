@@ -1,0 +1,60 @@
+<style>
+.table-inbox tr.unread td {
+    background: none repeat scroll 0 0 #f7f7f7;
+    font-weight: 600;
+}</style>  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+   
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/addBlog">Add Blog</a></li>
+        <li><a href="/inboxs">InBox</a></li>
+     
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+          <li><a ng-click='logoutAdmin()' >logout</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+            
+        
+<!--  <button class="btn btn-success pull-right" ng-click='logoutAdmin()' >logout</button>-->
+     
+           <div class="container">
+               
+            <div class="mail-box ">
+             
+                  <aside class="lg-side">
+                      
+                      <div class="inbox-body">
+                        
+                  
+                          <table class="table table-inbox table-hover">
+                            <tbody>
+                                 <div >
+                                       
+                                        <tr class="unread" ng-repeat="x in emails">
+                                          <td class="inbox-small-cells">
+                                              <input type="checkbox" class="mail-checkbox">
+                                          </td>
+                                          <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                          <td class="view-message  dont-show">{{x.email}}</td>
+<!--                                          <td class="view-message ">{{x.subject}}</td>-->
+                                          <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                          <td class="view-message  text-right">{{x.date.slice(0,10)}}</td>
+                                      </tr>
+                                 </div>
+                              
+                           
+                          </tbody>
+                          </table>
+                      </div>
+                  </aside>
+              </div>
+            </div>

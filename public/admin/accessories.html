@@ -1,0 +1,363 @@
+          <div class="col-md-12" ng-controller="accessCTRL">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h4 class="panel-title">
+                            Add  accessory
+                          </h4>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                       <div class="row">
+                          <div class="col-md-10 col-md-offset-1">
+                          
+                          <form ng-submit="addMobile(data)">
+                              <div class="alert alert-danger" ng-show="show.errMessageShow">
+                              {{errMessage}}
+                              </div>
+                              <div class="alert alert-success" ng-show="show.successMessageShow">
+                              
+                                          {{successMessage}}
+                              
+                              </div>
+                              <div class="jumbotron text-center" ng-show="show.loading">
+                               <h2>
+                                   
+                                 <i class="fa fa-spinner fa-spin 2x"></i>
+                               </h2> 
+                              </div>
+                           <br><br>
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                    name
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Enter Name" aria-label="..." ng-model="data.name" required>
+                            </div><!-- /input-group -->
+                              
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                   Product State 
+                               </p>
+                              </span>
+
+                           <select name="" id="" class="form-control" ng-model="data.productState">
+                               <option value="0">not Avalible</option>
+                               <option value="1">Avalible</option>
+                           </select>
+                            </div><!-- /input-group -->
+                             
+                             
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                 Price Before
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Price Before" aria-label="..." ng-model="data.priceBefore" required> 
+                            </div><!-- /input-group -->
+                              
+                              
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                price After
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder=" price After" aria-label="..." ng-model="data.priceAfter"required>
+                            </div><!-- /input-group -->
+                            
+                             <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Description
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Description" aria-label="..." ng-model="data.desc" required>
+                            </div><!-- /input-group -->
+                            
+                            
+                            
+                           <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                               Brand
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Brand" aria-label="..." ng-model="data.brand" required>
+                            </div><!-- /input-group -->
+                        
+                            
+                              <div class="input-group" ng-show="false">
+                              <span class="input-group-addon">
+                               <p>
+                                Color Avalible
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" ng-model="data.url">
+                            </div><!-- /input-group -->
+                            
+                            
+                            <div class="alert alert-danger" ng-show="show.errMessage">{{show.errText}}</div>
+                          <input type="file" class="form-control" file-model="myFile"/><br>
+                          
+                                 <i class="fa fa-spinner fa-spin fa-2x" ng-show="show.spin" aria-hidden="true"></i>
+                                 <i class="fa fa-check 2x" style="color:green" ng-show="show.check"></i>
+                            <button ng-click="uploadFile()" type="button" class="btn btn-success">
+                                    
+                                     <i class="fa fa-upload "></i>
+                                      Upload 
+                                      
+                            </button>  
+                            <br>
+                            
+                            
+                            <button class="btn btn-success pull-right" type="submit">Save</button>
+                            <br>
+                            <br>
+                            <br>
+                            </form>
+
+                          </div><!-- /.col-lg-6 -->
+                         
+                        </div><!-- /.row -->
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                   <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingtwo">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                          <h4 class="panel-title">
+                            {{mobiles.length}} accessory 
+                          </h4>
+                        </a>
+                    </div>
+                    <div id="collapsetwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingtwo">
+                      <div class="panel-body">
+                      <center>
+                          <div class="alert alert-danger" ng-show="show1.errMessageShow1">
+                              {{errMessage1}}
+                              </div>
+                              <div class="alert alert-success" ng-show="show1.successMessageShow1">
+                              
+                                          {{successMessage1}}
+                              
+                              </div>
+                              <div class="jumbotron text-center" ng-show="show1.loading1">
+                          </div>
+                              
+                        
+                         <input type="text" class="form-control" ng-model="search" placeholder="search mobile">
+                          
+                       <div class="row">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>Mobile name</th>
+                                <th>description</th>
+                                <th>brand</th>
+                                <th>price</th>
+                                <th>Action</th>
+                               
+                              </tr>
+                            </thead>
+                            <tbody ng-repeat="mobile in mobiles | accessPagination: (currentPage - 1) * itemsPerPage | limitTo:itemsPerPage | filter:search">
+                              <tr>
+                                <td>{{mobile._id}}</td>
+                                <td>{{mobile.name}}</td>
+                                <td>{{mobile.desc}}</td>
+                                <td>{{mobile.brand}}</td>
+                                <td>{{mobile.priceBefore}}</td>
+                                
+                                <td> <a ng-click="getId(mobile._id)" data-toggle="modal" data-target="#myModal"><i class="fa fa-trash-o"></i></a> 
+<!--                                <a data-toggle="modal" data-target="#EditModal"><i class="fa fa-pencil-square-o"></i></a> -->
+                                </td>
+                              </tr>
+                             
+                            </tbody>
+                          </table>
+                         
+                        </div><!-- /.row -->
+                        <ul uib-pagination total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ></ul>
+                     </center>
+
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+           </div>
+  
+<!--  delete modal-->
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Delete mobile</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you want t delete this mobile ?</p>
+      </div>
+     
+      <div class="modal-footer">
+        <button class="btn btn-success" ng-click="deletMobile()"  data-dismiss="modal">Yes</button>
+      <button class="btn btn-danger" data-dismiss="modal">no</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  
+  <!--  Edit modal-->
+  <div id="EditModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit mobile</h4>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+                          <div class="col-md-10 col-md-offset-1">
+                           <br><br>
+                                <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                   mobile name
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Enter Name" aria-label="...">
+                            </div><!-- /input-group -->
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                   Product State 
+                               </p>
+                              </span>
+
+                           <select name="" id="" class="form-control">
+                               <option value="0">not Avalible</option>
+                               <option value="1">Avalible</option>
+                           </select>
+                            </div><!-- /input-group -->
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                 Price Before
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Price Before" aria-label="...">
+                            </div><!-- /input-group -->
+                               <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                price After
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder=" price After" aria-label="...">
+                            </div><!-- /input-group -->
+                             <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Description
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Description" aria-label="...">
+                            </div><!-- /input-group -->
+                           <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                               Brand
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Brand" aria-label="...">
+                            </div><!-- /input-group -->
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                               Weight
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Weight" aria-label="...">
+                            </div><!-- /input-group -->
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Dimentions
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Dimentions" aria-label="...">
+                            </div><!-- /input-group -->
+                            
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                sim
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="sim" aria-label="...">
+                            </div><!-- /input-group -->
+                            
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Camera
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Camera" aria-label="...">
+                            </div><!-- /input-group -->
+                            
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Battery
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Battery" aria-label="...">
+                            </div><!-- /input-group -->
+                            
+                              <div class="input-group">
+                              <span class="input-group-addon">
+                               <p>
+                                Color Avalible
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Color Avalible" aria-label="...">
+                            </div><!-- /input-group -->
+                      
+                            
+                            <br>
+                            
+                            <br>
+
+                            <br>
+                            <br>
+                          </div><!-- /.col-lg-6 -->
+                         
+                        </div><!-- /.row -->
+      </div>
+     
+      <div class="modal-footer">
+      <button class="btn btn-success" >Save</button>
+       <button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  

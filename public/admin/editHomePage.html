@@ -1,0 +1,279 @@
+
+   <div class="col-md-12" ng-controller="editHomeCTRL">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4 class="panel-title">
+                        Edit Home Page
+                    </h4>
+                </a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <br>
+                            <h3>upload Slider images</h3>
+                            <br>
+                            
+                            
+<!--first-->
+                           <div class="input-group" ng-show="false">
+                              <span class="input-group-addon">
+                               <p>
+                                Color Avalible
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" ng-model="data.url">
+                            </div><!-- /input-group -->
+                            
+                            <div class="alert alert-danger" ng-show="show.errMessage">{{show.errText}}</div>
+                             <form ng-submit="addMobile(data)">
+                            
+                          <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    upload first image
+                               </p>
+                              </span>
+                                <input type="file" class="form-control"  file-model="myFile">
+
+                             </div>
+                          
+                                 <i class="fa fa-spinner fa-spin fa-2x" ng-show="show.spin" aria-hidden="true"></i>
+                                 <i class="fa fa-check 2x" style="color:green" ng-show="show.check"></i>
+                            <button ng-click="uploadFile()" type="button" class="btn btn-success">
+                                    
+                                     <i class="fa fa-upload "></i>
+                                      upload
+                            </button>  
+                            <br>
+                            <br>
+<!--second-->
+                             <div class="input-group" ng-show="false">
+                              <span class="input-group-addon">
+                               <p>
+                                Color Avalible
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" ng-model="data.url2">
+                            </div><!-- /input-group -->
+                            
+                             <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    upload second image
+                               </p>
+                              </span>
+                                <input type="file" class="form-control"  file-model="myFile">
+
+                             </div>
+                          
+                                 <i class="fa fa-spinner fa-spin fa-2x" ng-show="show.spin" aria-hidden="true"></i>
+                                 <i class="fa fa-check 2x" style="color:green" ng-show="show.check"></i>
+                            <button ng-click="uploadFile()" type="button" class="btn btn-success">
+                                    
+                                     <i class="fa fa-upload "></i>
+                                      upload
+                            </button>  
+                            <br>
+                            <br>
+<!--third-->
+                             <div class="input-group" ng-show="false">
+                              <span class="input-group-addon">
+                               <p>
+                                Color Avalible
+                               </p>
+                              </span>
+                              <input type="text" class="form-control" ng-model="data.url3">
+                            </div><!-- /input-group -->
+                            
+                             <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    upload third image
+                               </p>
+                              </span>
+                                <input type="file" class="form-control"  file-model="myFile">
+
+                             </div>
+                          
+                                 <i class="fa fa-spinner fa-spin fa-2x" ng-show="show.spin" aria-hidden="true"></i>
+                                 <i class="fa fa-check 2x" style="color:green" ng-show="show.check"></i>
+                                 
+                            <button ng-click="uploadFile()" type="button" class="btn btn-success">
+                                    
+                                     <i class="fa fa-upload "></i>
+                                      upload
+                            </button>  
+                               <br>
+                               <br>
+                                <button class="btn btn-success pull-right" type="submit">Save</button>
+                                
+                                </form>
+                                <br>
+                                <br>
+                            <hr>
+                          
+
+                            <div class="col-md-12">
+                                <div class="service">
+                                    <h3>First services</h3>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    title
+                               </p>
+                              </span>
+                                        <input type="text" class="form-control" placeholder="Enter first services title" aria-label="...">
+
+                                    </div>
+                                    <!-- /input-group -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    first service image
+                               </p>
+                              </span>
+                                        <input type="file" class="form-control" placeholder="upload first services image" aria-label="...">
+
+                                    </div>
+                                    <!-- /input-group -->
+                                    <div class="input-group">
+                                        <textarea name="" id="" cols="30" class="form-control" placeholder="enter first service content" rows="10"></textarea>
+
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <hr>
+                                <div class="service">
+                                    <h3>second services</h3>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    title
+                               </p>
+                              </span>
+                                        <input type="text" class="form-control" placeholder="Enter second services title" aria-label="...">
+
+                                    </div>
+                                    <!-- /input-group -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                               <p>
+                                    second service image
+                               </p>
+                              </span>
+                                        <input type="file" class="form-control" placeholder="upload second services image" aria-label="...">
+
+                                    </div>
+                                    <!-- /input-group -->
+                                    <div class="input-group">
+                                        <textarea name="" id="" cols="30" class="form-control" placeholder="enter second service content" rows="10"></textarea>
+
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                              
+                                <hr>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                   <p>
+                                       facebook Link
+                                   </p>
+                                  </span>
+                                    <input type="text" class="form-control" placeholder="Facebook Link">
+
+
+                                </div>
+                                <!-- /input-group -->
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                   <p>
+                                       Youtube Link
+                                   </p>
+                                  </span>
+                                    <input type="text" class="form-control" placeholder="Youtube Link">
+
+
+                                </div>
+                                <!-- /input-group -->
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                   <p>
+                                       Google Link
+                                   </p>
+                                  </span>
+                                    <input type="text" class="form-control" placeholder="Google Link">
+
+                                </div>
+                                <!-- /input-group -->
+
+                            </div>
+
+                            <br>
+
+                            <button class="btn btn-success pull-right">Save</button>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <!-- /.col-lg-6 -->
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+    </div>
+
+</div>
+
+
+
+<script>
+    $("#file-3").fileinput({
+        showUpload: false,
+        showCaption: false,
+        browseClass: "btn btn-success ",
+        fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        overwriteInitial: false,
+        initialPreviewAsData: true,
+        initialPreview: [
+            "http://lorempixel.com/1920/1080/transport/1",
+            "http://lorempixel.com/1920/1080/transport/2",
+            "http://lorempixel.com/1920/1080/transport/3"
+        ],
+        initialPreviewConfig: [{
+                caption: "transport-1.jpg",
+                size: 329892,
+                width: "100px",
+                url: "{$url}",
+                key: 1
+            },
+            {
+                caption: "transport-2.jpg",
+                size: 872378,
+                width: "100px",
+                url: "{$url}",
+                key: 2
+            },
+            {
+                caption: "transport-3.jpg",
+                size: 632762,
+                width: "100px",
+                url: "{$url}",
+                key: 3
+            }
+        ]
+    });
+</script>

@@ -1,0 +1,63 @@
+
+<style>
+.login-bottom {
+    width: 100%;
+    text-align: center;
+}
+.login-mail {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    text-align: left;
+    padding-left: 23px;
+    line-height: 2;
+    margin: 10px 149px;
+}
+  .login-bottom  i.fa.fa-envelope {
+    float: right;
+    margin-right: 24px;
+}
+  .login-bottom    i.fa.fa-lock {
+    float: right;
+    margin-right: 24px;
+}
+    label.hvr-shutter-in-horizontal.login-sub {
+    border: 1px solid;
+    border-radius: 5px;
+}
+  .login-bottom  input[type="submit"] {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+</style>
+	<div class="" ng-controller="signCTRL">
+<!--		<h1><a href="index.html">Minimal </a></h1>-->
+		<div class="login-bottom ">
+			<h2>Login</h2>
+			<form ng-submit="login(data)" >
+			<div class="col-md-6 col-md-offset-3">
+				<div class="login-mail">
+					<input type="text" placeholder="Email" required="" ng-model="data.email" >
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="Password" required="" ng-model="data.password">
+					<i class="fa fa-lock"></i>
+				</div>
+			
+			</div>
+			
+			<div class="col-md-6 col-md-offset-3 login-do">
+				<label class="hvr-shutter-in-horizontal login-sub">
+					<input type="submit"  >
+					</label>
+			</div>
+			
+			<div class="clearfix"> </div>
+			</form>
+		</div>
+	</div>
+
+<br>
